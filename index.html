@@ -6,6 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link rel="icon" href="favicon.png" type="image/x-icon"> -->
   <link rel="stylesheet" href="css/main.bundle.css">
+  <style>
+  /* Hover lift for every .card */
+  .card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+    will-change: transform;
+  }
+
+  .card:hover {
+    transform: translateY(-8px) !important;
+    box-shadow: 0 16px 32px rgba(0,0,0,0.15) !important;
+  }
+
+  .tile.is-child {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    will-change: transform;
+  }
+
+  .tile.is-child:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.18);
+  }
+
+
+</style>
   <script src="https://kit.fontawesome.com/4e5a72c756.js"></script>
 </head>
 
@@ -51,7 +75,7 @@
               Muhammad Adnan
             </h1>
             <h2 class="subtitle">
-              IT Student | Database Technology & Programming | Entertainment Enthusiast
+              IT Graduate | IT Support Technician @ Sensei | Entertainment Enthusiast 
             </h2>
             <!-- <p>
               <a href="docs/MuhammadAdnan_Resume.pdf" target="_blank" class="icon has-text-light">
@@ -68,10 +92,11 @@
     <div class="container">
       <h1 class="title">My Story</h1>
       <hr />
-      <p>I am an Information Technology Student at George Mason University in my senior year and refining my technical skills in areas such as Software Development, Databases, Cloud Computing, and Project Management. 
-        I am also the team lead for my IT Capstone project. I am on track to graduate in May 2025 with a bachelor's degree in Information Technology specializing in Database Technology & Programming (DTP). 
-        I am knowledge in Python, SQL, PL/SQL, Javascript, node.js, Swift, and HTML/CSS. I have also worked with PowerShell.
-      </p>
+      <p style="margin-bottom: 20px;">I am an Information Technology graduate from George Mason University with hands-on experience across systems administration, software development, and automation. I earned my Bachelor of Science in Information Technology with a concentration in Database Technology & Programming (DTP), where I also served as the team lead for my senior IT capstone project.
+        </p>
+<p style="margin-bottom: 20px;">My technical background includes programming and scripting with Python, SQL, PL/SQL, JavaScript (Node.js), Swift, HTML/CSS, and PowerShell, along with experience supporting enterprise IT environments. I enjoy building efficient, scalable solutions and bridging the gap between technical systems and real-world user needs.</p>
+<p>Beyond traditional IT, I am deeply passionate about entertainment technology and themed experiences, and I am especially interested in roles that blend IT, software, AV systems, and creative technology.</p>
+      
     </div>
   </section>
   <section class="section">
@@ -83,13 +108,45 @@
           <div class="media">
             <div class="media-left">
               <figure class="image is-48x48">
-                <img src="img/nuaxis_logo.png" alt="Placeholder image">
+                <a href="https://senseient.com" target="_blank"><img src="img/senseient_logo.png" alt="Placeholder image">
+                  </a>
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Sensei Enterprises</p>
+              <p class="subtitle is-6">IT Support Technician &middot; <time datetime="2018-1">September 2025</time> &mdash; <time
+                  datetime="2019-9">Present</time> </p>
+            </div>
+          </div>
+          <div class="content">
+            <!-- <p>Any Notes</p> -->
+            <ul>
+              <li>Provide technical support for end users across multiple clients, resolving hardware, software, and operating system issues on Windows and macOS devices.</li>
+              <li>Investigate and respond to security incidents, including account compromises, sign-in anomalies, and MFA reset requests; document findings in detailed After Action Reports.</li>
+              <li>Monitor antivirus and security dashboards for suspicious activity or malware alerts; take remediation steps as needed.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Information Technology</span>
+              <span class="tag">Cyber Security / Incident Response</span>
+              <span class="tag">Microsoft 365</span>
+              <span class="tag">Customer Service</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card card-gap">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <a href="https://nuaxis.com" target="_blank"><img src="img/nuaxis_logo.png" alt="Placeholder image">
+                  </a>
               </figure>
             </div>
             <div class="media-content">
               <p class="title is-4">NuAxis Innovations</p>
-              <p class="subtitle is-6">Junior Systems Administrator - <time datetime="2018-1">September 2024</time> - <time
-                  datetime="2019-9">Present</time> </p>
+              <p class="subtitle is-6">Junior Systems Administrator &middot; <time datetime="2018-1">September 2024</time> &mdash; <time
+                  datetime="2019-9">August 2025</time> </p>
             </div>
           </div>
           <div class="content">
@@ -114,12 +171,13 @@
           <div class="media">
             <div class="media-left">
               <figure class="image is-48x48">
-                <img src="img/sesameplace_logo.png" alt="Placeholder image">
+                <a href="https://sesameplace.com/philadelphia/" target="_blank"><img src="img/sesameplace_logo.png" alt="Placeholder image">
+                  </a>
               </figure>
             </div>
             <div class="media-content">
               <p class="title is-4">Sesame Place Philadelphia / United Parks & Resorts</p>
-              <p class="subtitle is-6">Entertainment Intern - <time datetime="2018-1">May 2024</time> - <time
+              <p class="subtitle is-6">Entertainment Intern &middot; <time datetime="2018-1">May 2024</time> &mdash; <time
                   datetime="2017-9">August 2025</time></p>
             </div>
           </div>
@@ -148,12 +206,13 @@
           <div class="media">
             <div class="media-left">
               <figure class="image is-48x48">
-                <img src="img/nuaxis_logo.png" alt="Placeholder image">
+                <a href="https://nuaxis.com" target="_blank"><img src="img/nuaxis_logo.png" alt="Placeholder image">
+                  </a>
               </figure>
             </div>
             <div class="media-content">
               <p class="title is-4">NuAxis Innovations</p>
-              <p class="subtitle is-6">Help Desk Support Technician Intern - <time datetime="2018-1">April 2022</time> - <time
+              <p class="subtitle is-6">Help Desk Support Technician Intern &middot; <time datetime="2018-1">April 2022</time> &mdash; <time
                   datetime="2017-9">May 2024</time></p>
             </div>
           </div>
@@ -236,30 +295,37 @@
     <div class="container">
       <h1 class="title">Education</h1>
       <hr />
-      <div class="card">
+        <div class="card">
         <div class="card-content">
-          <div class="content">
-            <p class="title is-4">George Mason University</p>
-            <p class="subtitle is-6">Information Technology, B.S. - <time datetime="2016-9">August 2019</time> - <time
-                datetime="2019-9">May 2025</time></p>
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <a href="https://www.gmu.edu" target="_blank"><img src="img/gmu_logo.png" alt="Placeholder image">
+                  </a>
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">George Mason University</p>
+              <p class="subtitle is-6" style="margin-bottom: 0;">Information Technology, B.S. &middot; <time datetime="2018-1">May 2025</time></p>
+              <p class="subtitle is-6">Concentration: Database Technology & Programming</p>
+            </div>
           </div>
-          <div class="content">
-            <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Phasellus nec iaculis mauris. -->
-            <ul>
-              <li>Specializing in Database Technology & Programming.</li>
-              <li>Serving as Team Lead for IT Capstone Project.</li>
-            </ul>
           </div>
-        </div>
-      </div>
+          </div>
+
       <div class="card card-gap">
         <div class="card-content">
-          <div class="content">
-            <p class="title is-4">Westfield High School</p>
-            <p class="subtitle is-6">Advanced Diploma - <time datetime="2015-9">June 2015</time> - <time
-                datetime="2015-9">June 2019</time></p>
-          </div>
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="img/whs_logo.png" alt="Placeholder image">
+                  </a>
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Westfield High School</p>
+              <p class="subtitle is-6" style="margin-bottom: 0;">Advanced Diploma &middot; <time datetime="2018-1">June 2019</time></p>
+            </div>
           <div class="content">
             <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Phasellus nec iaculis mauris. -->
@@ -414,10 +480,6 @@
           <p>My role was primarily as a backend developer for this project with some frontend work. I worked on implementing core functionality 
             on the website and assisting with debugging issues. I also worked on the Google Cloud platform to deploy our application
             to the cloud. 
-          </p>
-          <p>Unfortunately, we were unable to implement increased functionality and fix issues with 
-            Google Maps API and the chatbot due to time constraints. However, this project gave me more experience with Software Development and Agile 
-            Methodology in Project Management.
           </p>
           <p><a href="https://listastic-443620.ue.r.appspot.com" target="_blank">Website</a></p>
           <p>You may use 'admin' for both username and password if you'd like to take a look! No data is stored</p>
